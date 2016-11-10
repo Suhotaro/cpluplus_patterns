@@ -3,6 +3,8 @@ all:
 	cd 2.chain_of_responsibility && make
 	cd 3.observer && make
 	cd 4.command && make
+	cd 5.memento && make
+
 
 
 clean:
@@ -10,3 +12,4 @@ clean:
 	cd 2.chain_of_responsibility && make clean
 	cd 3.observer && make clean
 	cd 4.command && make clean
+	cd 5.memento && make clean
