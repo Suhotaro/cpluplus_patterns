@@ -3,20 +3,17 @@
 
 using namespace std;
 
-typedef enum
-{
-	TYPE_BASIC = 1,
-	TYPE_APPLICATION,
-	TYPE_FINANCIAL,
-} engineer_type;
 
 class SupportEngineer
 {
-protected:
-	engineer_type type;
-	SupportEngineer *next;
-
 public:
+	typedef enum
+	{
+		TYPE_BASIC = 1,
+		TYPE_APPLICATION,
+		TYPE_FINANCIAL,
+	} engineer_type;
+
 	SupportEngineer(engineer_type type_) : type(type_) {}
 	virtual ~SupportEngineer() {}
 
@@ -34,6 +31,10 @@ public:
 	}
 
 	virtual void process(string msg_) = 0;
+
+protected:
+	engineer_type type;
+	SupportEngineer *next;
 };
 
 class BasicSupportEngineer : public SupportEngineer
@@ -77,9 +78,9 @@ int main()
 	SupportEngineer *bse = new BasicSupportEngineer();
 	bse->setNext(new ApplicationSupportEngineer())->setNext(new FinancialSupportEngineer());
 
-	bse->message("job for basic", TYPE_BASIC);
-	bse->message("job for application", TYPE_APPLICATION);
-	bse->message("job for financail", TYPE_FINANCIAL);
+	bse->message("job for basic", SupportEngineer::TYPE_BASIC);
+	bse->message("job for application", SupportEngineer::TYPE_APPLICATION);
+	bse->message("job for financail", SupportEngineer::TYPE_FINANCIAL);
 
 	delete bse;
 
