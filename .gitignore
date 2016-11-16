@@ -5,4 +5,5 @@ memento2
 chain
 strategy
 state
+strategy_as_function
 *~
