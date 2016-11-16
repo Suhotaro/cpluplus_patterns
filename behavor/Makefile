@@ -5,8 +5,7 @@ all:
 	cd 4.command && make
 	cd 5.memento && make
 	cd 6.state && make
-
-
+	cd 7.strategy && make
 
 
 clean:
@@ -16,3 +15,4 @@ clean:
 	cd 4.command && make clean
 	cd 5.memento && make clean
 	cd 6.state && make clean
+	cd 7.strategy && make clean
