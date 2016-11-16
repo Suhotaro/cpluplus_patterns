@@ -4,6 +4,8 @@ all:
 	cd 3.observer && make
 	cd 4.command && make
 	cd 5.memento && make
+	cd 6.state && make
+
 
 
 
@@ -13,3 +15,4 @@ clean:
 	cd 3.observer && make clean
 	cd 4.command && make clean
 	cd 5.memento && make clean
+	cd 6.state && make clean
