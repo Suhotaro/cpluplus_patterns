@@ -7,6 +7,7 @@ all:
 	cd 6.state && make
 	cd 7.strategy && make
 	cd 8.template_method && make
+	cd 9.visitor && make
 
 
 clean:
@@ -18,3 +19,4 @@ clean:
 	cd 6.state && make clean
 	cd 7.strategy && make clean
 	cd 8.template_method && make clean
+	cd 9.visitor && make clean
