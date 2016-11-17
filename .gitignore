@@ -6,4 +6,5 @@ chain
 strategy
 state
 strategy_as_function
+template_method
 *~

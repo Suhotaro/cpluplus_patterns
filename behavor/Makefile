@@ -6,6 +6,7 @@ all:
 	cd 5.memento && make
 	cd 6.state && make
 	cd 7.strategy && make
+	cd 8.template_method && make
 
 
 clean:
@@ -16,3 +17,4 @@ clean:
 	cd 5.memento && make clean
 	cd 6.state && make clean
 	cd 7.strategy && make clean
+	cd 8.template_method && make clean
