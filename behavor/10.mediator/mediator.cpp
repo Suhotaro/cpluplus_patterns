@@ -44,8 +44,8 @@ protected:
 	SecondColleague *colleague2;
 
 public:
-	void set_first_colleague(FirstColleague *colleague) { colleague1 = colleague; }
-	void set_second_colleague(SecondColleague *colleague) { colleague2 = colleague; }
+	void set_colleague(FirstColleague *colleague) { colleague1 = colleague; }
+	void set_colleague(SecondColleague *colleague) { colleague2 = colleague; }
 
 	//void set_colleague(SecondColleague *colleague) { colleague1 = colleague; }
 
@@ -66,8 +66,8 @@ int main()
 	FirstColleague c1(&m);
 	SecondColleague c2(&m);
 
-	m.set_first_colleague(&c1);
-	m.set_second_colleague(&c2);
+	m.set_colleague(&c1);
+	m.set_colleague(&c2);
 
 	c1.send("How are you?");
 	c2.send("Fine, thanks");
