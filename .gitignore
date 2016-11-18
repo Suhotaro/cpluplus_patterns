@@ -9,4 +9,5 @@ strategy_as_function
 template_method
 visitor
 visitor2
+mediator
 *~

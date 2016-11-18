@@ -1,3 +1,5 @@
+# TODO: make foreach dir loop
+
 all:
 	cd 1.iterator && make
 	cd 2.chain_of_responsibility && make
@@ -8,6 +10,7 @@ all:
 	cd 7.strategy && make
 	cd 8.template_method && make
 	cd 9.visitor && make
+	cd 10.mediator && make
 
 
 clean:
@@ -20,3 +23,4 @@ clean:
 	cd 7.strategy && make clean
 	cd 8.template_method && make clean
 	cd 9.visitor && make clean
+	cd 10.mediator && make
