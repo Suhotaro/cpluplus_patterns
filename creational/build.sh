@@ -9,4 +9,3 @@ for i in ${DIRS} ; do
         cd ..
 	fi
 done
-
