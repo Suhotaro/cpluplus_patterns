@@ -13,4 +13,8 @@ cd behavor
 ./build.sh ${cmd}
 cd ..
 
+cd creational
+./build.sh ${cmd}
+cd ..
+
 printf "<<------- stop building\n"

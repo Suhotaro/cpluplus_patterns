@@ -10,4 +10,6 @@ template_method
 visitor
 visitor2
 mediator
+abstract_factory
+abstract_factory_2
 *~
