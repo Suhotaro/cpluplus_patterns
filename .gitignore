@@ -22,4 +22,6 @@ adaptor
 bridge
 composite
 composite_2
+decorator
+decorator_2
 *~
