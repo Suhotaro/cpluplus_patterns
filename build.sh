@@ -17,4 +17,8 @@ cd creational
 ./build.sh ${cmd}
 cd ..
 
+cd structural
+./build.sh ${cmd}
+cd ..
+
 printf "<<------- stop building\n"
