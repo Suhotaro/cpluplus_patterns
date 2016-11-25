@@ -18,4 +18,8 @@ fabric_methode_3
 builder
 prototype
 singletone
+adaptor
+bridge
+composite
+composite_2
 *~
