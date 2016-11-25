@@ -6,19 +6,16 @@
 
 printf "start building ------->>\n"
 
+DIRS="./*"
 cmd=$1
 echo "command to invoke: ${cmd}"
 
-cd behavor
-./build.sh ${cmd}
-cd ..
-
-cd creational
-./build.sh ${cmd}
-cd ..
-
-cd structural
-./build.sh ${cmd}
-cd ..
+for i in ${DIRS} ; do
+	if [ -d ${i} ]; then
+        echo "DIR: ${i}"
+		cd ${i} && ./build.sh ${cmd}
+        cd ..
+	fi
+done
 
 printf "<<------- stop building\n"
